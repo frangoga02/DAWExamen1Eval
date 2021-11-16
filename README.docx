@@ -3,9 +3,43 @@ a.
 -Primero iniciamos el repositorio con git init.
 -Enlazamos el repositorio local con el repositorio remoto
 con el comando git remote add origin https://github.com/frangoga02/DAWExamen1Eval.git . 
-- introducimos git add . para añadir los cambios.
+-Introducimos git add . para añadir los cambios.
 -Indicamos el commit con el comando git commit -m ""
 -Introducimos git branch -M main para realizar la rama master.
-- La primera vez que subimos algo al repositorio remoto tenemos que realizar con el comando git push -u origin main. ,
-de esta forma indicamos que es la rama principal.
+b.La primera vez que subimos algo al repositorio remoto tenemos que realizar con el comando git push -u origin main. ,
+ de esta forma indicamos que es la rama principal.
+c.Creamos un fichero llamado private.txt
+d.Creamos una carpeta llamada privada.
+e.Para que tanto el fichero como la carpeta sean ignorados tenemos que crear un fichero .gitignore e incluir dentro de el 
+todo lo que queramos que se ignore, en este caso private.txt y privada/ .
+Realizamos git add . y un commit con lo cambios realizados.
+f.Añadimos el fichero 1.txt con mi dni dentro de el e introducimos git add . y un commit con los cambios que hemos realizado.
+g.Creamos el tag v1 con el comando git tag v1.
+h.Subimos todos los cambios a remoto con git push y para subir la etiqueta tenemos que realizar git push origin v1, en mi 
+caso por error he subido primero la etiquet y luego los demás , pero la forma correcta sería primero git push y después git push origin v1 .
+
+
+Ejercicio2.
+
+- Creamos la rama con git branch v0.2 , para comprobar las ramas que tenemos introducimos git branch .
+- Cambiamos a la rama v0.2 con git checkout v0.2 y una vez dentro creamos el fichero 2.txt
+- Cambiamos a la rama master con git checkout main , relaizamos un merge con git merge v0.2 para poner todos los cambios
+en la rama master.
+
+Ejercicio3.
+
+-Nos aseguramos que estamos en la rama main con git branch main, introducimos Hola en el fichero 1.txt , guardamos , 
+introducimos git add . para añadir los cambios e introducimos el commit con git commit -m "" ;
+- Nos posicionamos en v0.2 con git branch v0.2 , introducimos Adios en 1.txt , introducimos git add . para introducir
+los cambios y git commit -m "" para realzar el commit.
+-Nos posicionamos en la master con git checkout main, realizamos git merge v0.2 , nos mostrará un conflicto en 1.txt, 
+para solucionarlo dejamos en 1.txt el resultado final que deseemos , en este caso dejamos tanto hola como adios.
+Una vez realizado esto introducimos add . con los camnios realizado e introducimos un commit con git commit -m "".
+Nos posicionamos en la rama v0.2 con git checkout v0.2 y relaizamos git merge main para introducir el conflicto solucionado
+en la rama v0.2 también.
+
+Ejercicio4.
+- para listar las ramas con merge es con el comando git branch --merged y para las ramas sin merge git branch --no-merged.
+-Creamos el tag v0.2 con git tag v0.2 , para comprobar que está creada podemos introducir git show.
+-Borramos la rama con el comando git branch -d v0.2
 
