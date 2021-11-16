@@ -1,0 +1,11 @@
+Ejercicio1.
+a. 
+-Primero iniciamos el repositorio con git init.
+-Enlazamos el repositorio local con el repositorio remoto
+con el comando git remote add origin https://github.com/frangoga02/DAWExamen1Eval.git . 
+- introducimos git add . para añadir los cambios.
+-Indicamos el commit con el comando git commit -m ""
+-Introducimos git branch -M main para realizar la rama master.
+- La primera vez que subimos algo al repositorio remoto tenemos que realizar con el comando git push -u origin main. ,
+de esta forma indicamos que es la rama principal.
+
